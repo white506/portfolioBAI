@@ -461,7 +461,7 @@ textarea.input {
   border-radius: 0.25rem;
   font-size: 0.75rem;
   line-height: 1.25;
-  color: #656D72;
+  color: #ABAA9F;
 }
 
 .header {
@@ -620,7 +620,7 @@ textarea.input {
 .decor-main-section__box::after {
   content: "";
   z-index: 2;
-  background: #eae6fe url("../img/main/lines.svg") top right/58% no-repeat;
+  background: #293038 url("../img/main/lines.svg") top right/58% no-repeat;
 }
 
 .decor-main-section__image {
@@ -631,6 +631,10 @@ textarea.input {
   left: 0;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.decor-main-section__image img {
+  opacity: 0.7;
 }
 
 .decor-main-section__picture {
@@ -1074,75 +1078,6 @@ textarea.input {
   transition: color 0.3s ease 0s;
 }
 
-.testimonials__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 1.875rem;
-}
-
-.testimonials__items {
-  display: -ms-grid;
-  display: grid;
-  row-gap: 5rem;
-  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
-}
-
-.item-testimonials {
-  background: #293038;
-  border-radius: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 1.5rem;
-}
-
-.item-testimonials__avatar-ibg {
-  border: 1px solid #AAA285;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 6rem;
-  height: 6rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: -3rem;
-}
-
-.item-testimonials__avatar-ibg:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.item-testimonials__name {
-  color: #ABAA9F;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.2857142857;
-}
-
-.item-testimonials__name:not(:last-child) {
-  margin-bottom: 0.5625rem;
-}
-
-.item-testimonials__profession {
-  background: #AAA285;
-  color: #E4E3CE;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 .skills__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1249,7 +1184,7 @@ textarea.input {
 }
 
 .content-skills__line {
-  background: #F5F3FE;
+  background: #293038;
   height: 8px;
   border-radius: 0.125rem;
   position: relative;
@@ -1626,28 +1561,6 @@ textarea.form__input {
     gap: 2.5rem;
   }
 
-  .testimonials__title {
-    margin-bottom: 8.25rem;
-  }
-
-  .testimonials__items {
-    -webkit-column-gap: 2.5rem;
-       -moz-column-gap: 2.5rem;
-            column-gap: 2.5rem;
-  }
-
-  .item-testimonials {
-    padding-left: 2.375rem;
-  }
-
-  .item-testimonials {
-    padding-right: 2.375rem;
-  }
-
-  .item-testimonials__text:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-
   .skills__title {
     margin-bottom: 7rem;
   }
@@ -1744,28 +1657,6 @@ textarea.form__input {
 
   .blog__items {
     gap: 1.25rem;
-  }
-
-  .testimonials__title {
-    margin-bottom: 5rem;
-  }
-
-  .testimonials__items {
-    -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
-            column-gap: 1.25rem;
-  }
-
-  .item-testimonials {
-    padding-left: 0.625rem;
-  }
-
-  .item-testimonials {
-    padding-right: 0.625rem;
-  }
-
-  .item-testimonials__text:not(:last-child) {
-    margin-bottom: 1.25rem;
   }
 
   .skills__title {
@@ -2224,70 +2115,6 @@ textarea.form__input {
     }
 }
 
-@supports (margin-bottom: clamp( 5rem , 3.8571428571rem  +  5.7142857143vw , 8.25rem )) {
-    .testimonials__title {
-      margin-bottom: clamp( 5rem , 3.8571428571rem  +  5.7142857143vw , 8.25rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 5rem , 3.8571428571rem  +  5.7142857143vw , 8.25rem )) {
-    .testimonials__title {
-      margin-bottom: calc(5rem + 3.25 * (100vw - 20rem) / 56.875);
-    }
-}
-
-@supports ((-moz-column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) or (column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem ))) {
-    .testimonials__items {
-      -webkit-column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem );
-         -moz-column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem );
-              column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem );
-    }
-}
-
-@supports not ((-moz-column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) or (column-gap: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem ))) {
-    .testimonials__items {
-      -webkit-column-gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 56.875);
-         -moz-column-gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 56.875);
-              column-gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 56.875);
-    }
-}
-
-@supports (padding-left: clamp( 0.625rem , 0.0096153846rem  +  3.0769230769vw , 2.375rem )) {
-    .item-testimonials {
-      padding-left: clamp( 0.625rem , 0.0096153846rem  +  3.0769230769vw , 2.375rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.625rem , 0.0096153846rem  +  3.0769230769vw , 2.375rem )) {
-    .item-testimonials {
-      padding-left: calc(0.625rem + 1.75 * (100vw - 20rem) / 56.875);
-    }
-}
-
-@supports (padding-right: clamp( 0.625rem , 0.0096153846rem  +  3.0769230769vw , 2.375rem )) {
-    .item-testimonials {
-      padding-right: clamp( 0.625rem , 0.0096153846rem  +  3.0769230769vw , 2.375rem );
-    }
-}
-
-@supports not (padding-right: clamp( 0.625rem , 0.0096153846rem  +  3.0769230769vw , 2.375rem )) {
-    .item-testimonials {
-      padding-right: calc(0.625rem + 1.75 * (100vw - 20rem) / 56.875);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.25rem , 0.6346153846rem  +  3.0769230769vw , 3rem )) {
-    .item-testimonials__text:not(:last-child) {
-      margin-bottom: clamp( 1.25rem , 0.6346153846rem  +  3.0769230769vw , 3rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.25rem , 0.6346153846rem  +  3.0769230769vw , 3rem )) {
-    .item-testimonials__text:not(:last-child) {
-      margin-bottom: calc(1.25rem + 1.75 * (100vw - 20rem) / 56.875);
-    }
-}
-
 @supports (margin-bottom: clamp( 1.875rem , 0.0728021978rem  +  9.010989011vw , 7rem )) {
     .skills__title {
       margin-bottom: clamp( 1.875rem , 0.0728021978rem  +  9.010989011vw , 7rem );
@@ -2473,7 +2300,7 @@ textarea.form__input {
   }
 
   .item-portfolio__link-title:hover {
-    color: #AAA285;
+    color: #ABAA9F;
   }
 
   .item-portfolio__link:hover {
